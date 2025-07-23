@@ -361,7 +361,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
         </div>
         <div className={` ${window.innerWidth <= 576 ? "h-[220px]" : "h-[240px]" } bg-black flex justify-center items-center `}>
            <div className={` ${window.innerWidth <= 576 ? "h-[210px]" : "h-[220px]" } bg-black  w-[90%] my-[15px] `}>
-            <div className={` ${window.innerWidth <= 576 ? "ms-[10px] h-[40px]" : "ms-[60px] h-[50px]" } bg-red-500  w-[150px] border-solid border-[2px] border-gray-600 rounded-[10px] mt-[15px] `}>
+            <div className={` ${window.innerWidth <= 576 ? "ms-[10px] h-[40px] pt-[2px]" : "ms-[60px] h-[50px]" } w-[150px] border-solid border-[2px] border-gray-600 rounded-[10px] mt-[15px] `}>
               <li className="relative group flex items-center justify-center ">
                <a href="/" className={` ${window.innerWidth <= 576 ? "pt-[1px] " : " ms-[5px] px-3 py-2" } flex items-center text-white`}>
                  爱A ENGLISH

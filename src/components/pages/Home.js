@@ -186,12 +186,12 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
             <button onClick={handlePrev} disabled={startindex === 0} className={` ${window.innerWidth <= 576 ?"left-[2px] h-[120px] top-[45%] " : " left-[30px] h-[150px] top-1/2"} text-white text-3xl font-bold bg-[#474748] bg-opacity-75 absolute w-[35px] text-[30px] border-none cursor-pointer  -translate-y-1/2 z-[2]`}>‹</button>
             <button onClick={handleNext} disabled={startindex + itemsperpage >= images.length} className={` ${window.innerWidth <= 576 ?"h-[120px] top-[45%] right-[2px] " : "h-[150px] right-[30px] top-1/2"} text-white text-3xl font-bold bg-[#474748] bg-opacity-75 absolute w-[35px] text-[30px] border-none cursor-pointer -translate-y-1/2 z-[2]`}>›</button>
 
-            <div className="flex h-[300px] w-[90%]  items-center">
+            <div className={` ${window.innerWidth <=  576 ? "justify-center" : "items-center" } flex h-[300px] w-[90%]  items-center`}>
              {visibleimages.map((item,index)=>{
-              return <div key={index} className={` ${window.innerWidth <= 576 ? "h-[250px] w-[280px] m-[10px] " : " m-[20px] h-[300px] w-[220px]"} relative bg-gray-300 overflow-visible obj `}>
+              return <div key={index} className={` ${window.innerWidth <= 576 ? "h-[250px] w-[200px] m-[10px]  " : " m-[20px] h-[300px] w-[220px]"} relative bg-gray-300 overflow-visible obj `}>
                   <img className='absolute h-[60px] w-[50px] m-[10px] ' src="netfliex-icon.png" alt="" />
                   <img className="h-full w-full hover:scale-110 object-cover" src={item.img} alt="Sample"/>
-                  <span className={` ${window.innerWidth <= 576 ? "text-[80px] [-webkit-text-stroke:2px_white] font-bold left-[-30]" : " text-[120px] [-webkit-text-stroke:3px_white] font-bold left-[-20px]" } absolute  bottom-[-20px]`}>
+                  <span className={` ${window.innerWidth <= 576 ? "text-[90px] [-webkit-text-stroke:2px_white] font-bold left-[-25]" : " text-[120px] [-webkit-text-stroke:3px_white] font-bold left-[-20px]" } absolute  bottom-[-20px]`}>
                     {item.number}
                   </span>
               </div>

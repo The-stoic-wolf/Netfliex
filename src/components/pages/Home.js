@@ -150,7 +150,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
 
               <div className={` ${window.innerWidth <= 576 ? "top-[20%] left-[2%] h-[400px] w-[84%] mx-[7%]" : "top-[25%] left-[22%] h-[400px] w-[900px]" } z-20 absolute flex items-center pt-[10px] flex-col`}>
                 <div className={` ${window.innerWidth <= 576 ? "h-[120px] w-[94%]" : "h-[160px] w-[90%]" } flex `}>
-                  <p className={` ${window.innerWidth <= 576 ? "text-[37px] " : "italic text-[70px]" } font-bold text-white  leading-none text-center`}>Unlimited movies, TV shows, and more</p>
+                  <p className={` ${window.innerWidth <= 576 ? "text-[37px] font-extrabold " : "italic text-[70px] font-bold" } text-white  leading-none text-center`}>Unlimited movies, TV shows, and more</p>
                 </div>
                 <div className={` ${window.innerWidth <= 576 ? " w-[94%] h-[30px] mt-[5px]" : " w-[90%] h-[50px] mt-[10px]"} `}>
                   <p className={` ${window.innerWidth <= 576 ? "text-[18px] " : " text-[30px]" } text-center text-white italic font-semibold`}>Starts at Rs 250. Cancel anytime.</p>
@@ -165,7 +165,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                       <input id='input1' onChange={handlechangeinput1} onBlur={handleBlurinput1} className={` ${window.innerWidth <= 576 ? "w-[96%] ms-[2%]" : "ms-[1%] w-[98%]" } ${error1 ?"border-solid border-red-500 h-[60px] border-[2px]":" border-slate-300"} text-white  text-[15px] ps-[10px] h-[70px] bg-black border-[1px] outline-none rounded-[5px] focus:border-solid focus:border-[3px]  `} type={email1} placeholder='Email address' />
                       {inputError1 && (<p className={` ${window.innerWidth <= 576 ? "text-[15px] w-[90%] " : " text-[18px] w-[80%]" } h-[25px] ms-[10px] text-red-500 `}>{error1}</p>)}
                     </div>
-                    <button className={` ${window.innerWidth <= 576 ? "w-[45%] text-[15px] h-[60px] mt-[3px] font-bold " : "w-[27%] text-[25px] h-[70px] ms-[0%] font-semibold pb-[12px] ps-[5px]" } bg-red-600 rounded-[10px] text-white `} onClick={handlemovecursor1}>GET STARTED <span className={`${window.innerWidth <= 576 ? "text-[20px] ps-[5px]" : "text-[40px] ps-[5px] font-bold  " }`}> › </span></button>
+                    <button className={` ${window.innerWidth <= 576 ? "w-[45%] text-[15px] h-[60px] mt-[3px] font-extrabold " : "w-[27%] text-[25px] h-[70px] ms-[0%] font-semibold pb-[12px] ps-[5px]" } bg-red-600 rounded-[10px] text-white `} onClick={handlemovecursor1}>GET STARTED <span className={`${window.innerWidth <= 576 ? "text-[20px] ps-[5px] font-extrabold" : "text-[40px] ps-[5px] font-bold  " }`}> › </span></button>
                   </div>
                   
                 </div>
@@ -191,7 +191,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
               return <div key={index} className={` ${window.innerWidth <= 576 ? "h-[250px] w-[200px] m-[10px]  " : " m-[20px] h-[300px] w-[220px]"} relative bg-gray-300 overflow-visible obj `}>
                   <img className='absolute h-[60px] w-[50px] m-[10px] ' src="netfliex-icon.png" alt="" />
                   <img className="h-full w-full hover:scale-110 object-cover" src={item.img} alt="Sample"/>
-                  <span className={` ${window.innerWidth <= 576 ? "text-[90px] [-webkit-text-stroke:2px_white] font-bold left-[-25]" : " text-[120px] [-webkit-text-stroke:3px_white] font-bold left-[-20px]" } absolute  bottom-[-20px]`}>
+                  <span className={` ${window.innerWidth <= 576 ? "text-[90px] [-webkit-text-stroke:2px_white] font-extrabold left-[-22]" : " text-[120px] [-webkit-text-stroke:3px_white] font-bold left-[-20px]" } absolute  bottom-[-20px]`}>
                     {item.number}
                   </span>
               </div>
@@ -321,7 +321,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                  <input id='input2' onChange={handlechangeinput2} onBlur={handleBlurinput2} className={` ${window.innerWidth <= 576 ? "w-[96%] ms-[2%] mt-[2px]" : "ms-[10%] w-[90%]" } ${error1 ?"border-solid border-red-500 h-[60px] border-[2px]":" border-slate-500"} text-white focus:border-white text-[15px] ps-[10px] h-[70px] bg-black border-[1px] outline-none rounded-[5px] focus:border-solid focus:border-[3px]  `} type={email1} placeholder='Email address' />
                  {inputError2 && (<p className={` ${window.innerWidth <= 576 ? "text-[15px] w-[90%]  ms-[15px]" : "ms-[10%] text-[18px] w-[80%]" } h-[25px] text-red-500 `}>{error2}</p>)}
               </div>
-                  <button className={` ${window.innerWidth <= 576 ? "w-[40%] text-[15px] h-[60px] pb-[4px] mt-[5px] ms-[30%] ps-[2px]" : "w-[15%] text-[25px] h-[70px] font-semibold pb-[12px] ms-[1%] ps-[5px]" } bg-red-600 rounded-[10px] text-white`} onClick={handlemovecursor2}>GET STARTED <span className={`${window.innerWidth <= 576 ? " text-[20px] ps-[5px]" : "text-[40px] ps-[5px] font-bold  " }`}> › </span></button>
+                  <button className={` ${window.innerWidth <= 576 ? "w-[40%] text-[15px] h-[60px] pb-[4px] mt-[5px] ms-[30%] ps-[2px] font-extrabold " : "w-[15%] text-[25px] h-[70px] font-semibold pb-[12px] ms-[1%] ps-[5px]" } bg-red-600 rounded-[10px] text-white`} onClick={handlemovecursor2}>GET STARTED <span className={`${window.innerWidth <= 576 ? " text-[20px] ps-[5px] font-extrabold " : "text-[40px] ps-[5px] font-bold" }`}> › </span></button>
             </div>
             
           </div>

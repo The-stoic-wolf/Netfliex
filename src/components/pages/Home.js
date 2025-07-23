@@ -165,7 +165,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                       <input id='input1' onChange={handlechangeinput1} onBlur={handleBlurinput1} className={` ${window.innerWidth <= 576 ? "w-[96%] ms-[2%]" : "ms-[1%] w-[98%]" } ${error1 ?"border-solid border-red-500 h-[60px] border-[2px]":" border-slate-300"} text-white  text-[15px] ps-[10px] h-[70px] bg-black border-[1px] outline-none rounded-[5px] focus:border-solid focus:border-[3px]  `} type={email1} placeholder='Email address' />
                       {inputError1 && (<p className={` ${window.innerWidth <= 576 ? "text-[15px] w-[90%] " : " text-[18px] w-[80%]" } h-[25px] ms-[10px] text-red-500 `}>{error1}</p>)}
                     </div>
-                    <button className={` ${window.innerWidth <= 576 ? "w-[45%] text-[15px] h-[60px] mt-[3px] font-extrabold " : "w-[27%] text-[25px] h-[70px] ms-[0%] font-semibold pb-[12px] ps-[5px]" } bg-red-600 rounded-[10px] text-white `} onClick={handlemovecursor1}>GET STARTED <span className={`${window.innerWidth <= 576 ? "text-[20px] ps-[5px] font-extrabold" : "text-[40px] ps-[5px] font-bold  " }`}> › </span></button>
+                    <button className={` ${window.innerWidth <= 576 ? "w-[45%] text-[15px] h-[60px] mt-[3px] ps-[2px] font-extrabold " : "w-[27%] text-[25px] h-[70px] ms-[0%] font-semibold pb-[12px] ps-[5px]" } bg-red-600 rounded-[10px] text-white `} onClick={handlemovecursor1}>GET STARTED <span className={`${window.innerWidth <= 576 ? "text-[20px] ps-[5px] font-extrabold" : "text-[40px] ps-[5px] font-bold  " }`}> › </span></button>
                   </div>
                   
                 </div>

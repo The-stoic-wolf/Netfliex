@@ -363,7 +363,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
            <div className={` ${window.innerWidth <= 576 ? "h-[200px] " : "h-[220px]" }  w-[90%] bg-black my-[15px] `}>
             <div className={` ${window.innerWidth <= 576 ? "ms-[10px] " : "ms-[60px]" } h-[50px] w-[150px] border-solid border-[2px] border-gray-600 rounded-[10px] mt-[15px] `}>
               <li className="relative group">
-               <a href="/" className="flex items-center px-3 py-2 ms-[5px] text-white">
+               <a href="/" className={` ${window.innerWidth <= 576 ? "" : " ms-[5px] px-3 py-2" } flex items-center text-white`}>
                  爱A ENGLISH
                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path  strokeLinecap="round" strokeWidth="2"

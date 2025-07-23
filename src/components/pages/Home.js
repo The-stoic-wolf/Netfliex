@@ -165,7 +165,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                       <input id='input1' onChange={handlechangeinput1} onBlur={handleBlurinput1} className={` ${window.innerWidth <= 576 ? "w-[96%] ms-[2%]" : "ms-[1%] w-[98%]" } ${error1 ?"border-solid border-red-500 h-[60px] border-[2px]":" border-slate-300"} text-white  text-[15px] ps-[10px] h-[70px] bg-black border-[1px] outline-none rounded-[5px] focus:border-solid focus:border-[3px]  `} type={email1} placeholder='Email address' />
                       {inputError1 && (<p className={` ${window.innerWidth <= 576 ? "text-[15px] w-[90%] " : " text-[18px] w-[80%]" } h-[25px] ms-[10px] text-red-500 `}>{error1}</p>)}
                     </div>
-                    <button className={` ${window.innerWidth <= 576 ? "w-[42%] text-[15px] h-[60px] pb-[4px] mt-[5px] font-bold " : "w-[27%] text-[25px] h-[70px] ms-[0%] font-semibold pb-[12px] " } bg-red-600 rounded-[10px] text-white ps-[5px]`} onClick={handlemovecursor1}>GET STARTED <span className={`${window.innerWidth <= 576 ? "text-[20px] ps-[5px]" : "text-[40px] ps-[5px] font-bold  " }`}> › </span></button>
+                    <button className={` ${window.innerWidth <= 576 ? "w-[45%] text-[15px] h-[60px] mt-[3px] font-bold " : "w-[27%] text-[25px] h-[70px] ms-[0%] font-semibold pb-[12px] ps-[5px]" } bg-red-600 rounded-[10px] text-white `} onClick={handlemovecursor1}>GET STARTED <span className={`${window.innerWidth <= 576 ? "text-[20px] ps-[5px]" : "text-[40px] ps-[5px] font-bold  " }`}> › </span></button>
                   </div>
                   
                 </div>
@@ -363,7 +363,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
            <div className={` ${window.innerWidth <= 576 ? "h-[200px] " : "h-[220px]" }  w-[90%] bg-black my-[15px] `}>
             <div className={` ${window.innerWidth <= 576 ? "ms-[10px] " : "ms-[60px]" } h-[50px] w-[150px] border-solid border-[2px] border-gray-600 rounded-[10px] mt-[15px] `}>
               <li className="relative group">
-               <a href="/" className={` ${window.innerWidth <= 576 ? "" : " ms-[5px] px-3 py-2" } flex items-center text-white`}>
+               <a href="/" className={` ${window.innerWidth <= 576 ? "pt-[1px] " : " ms-[5px] px-3 py-2" } flex items-center text-white`}>
                  爱A ENGLISH
                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path  strokeLinecap="round" strokeWidth="2"

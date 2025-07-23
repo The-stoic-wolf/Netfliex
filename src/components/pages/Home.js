@@ -251,7 +251,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                      <div className={` ${window.innerWidth <= 576 ? "ps-[10px] text-[22px] font-medium" : "ps-[20px] text-[35px]" }`}><p>What is Netfliex ?</p></div>
                       <div className={` ${window.innerWidth <= 576 ? "mr-4" : "mr-6" } transition-transform group-open:rotate-180 `}><span className={` ${window.innerWidth <= 576 ? "text-[12px]" : " text-[22px]" } h-[10px] w-[20px] flex items-center justify-center `}>▼</span></div>
                   </summary>
-                  <div className={` ${window.innerWidth <= 576 ? "px-[15px] h-[250px] rounded-[15px] pt-[10px]" : " px-[50px] h-[325px]" }  text-white  bg-[#323232] mt-[2px]  `}>
+                  <div className={` ${window.innerWidth <= 576 ? "px-[15px] h-[255px] rounded-[15px] pt-[10px]" : " px-[50px] h-[325px]" }  text-white  bg-[#323232] mt-[2px]  `}>
                     <p className={` ${window.innerWidth <= 576 ? "text-[15px] " : "text-[30px]" }  font-semibold text-white break-words`}>Netflix is a streaming service that offers a wide variety of award-winning TV shows,movies, anime, documentaries, and more on thousands of internet-connected device.
                     <br/><br/> You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
                   </div>
@@ -262,7 +262,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                      <div className={` ${window.innerWidth <= 576 ? "ps-[10px] text-[22px] font-medium" : "ps-[20px] text-[35px]" }`}><p>How much does netfliex Cost ?</p></div>
                       <div className={` ${window.innerWidth <= 576 ? "mr-4" : "mr-6" } transition-transform group-open:rotate-180 `}><span className={` ${window.innerWidth <= 576 ? "text-[12px]" : " text-[22px]" } h-[10px] w-[20px] flex items-center justify-center `}>▼</span></div>
                   </summary>
-                  <div className={` ${window.innerWidth <= 576 ? "px-[15px] rounded-[15px] h-[120px] " : " px-[50px] h-[150px]" } pt-[10px] text-white  bg-[#323232] mt-[2px]  `}>
+                  <div className={` ${window.innerWidth <= 576 ? "px-[15px] rounded-[15px] h-[125px] " : " px-[50px] h-[150px]" } pt-[10px] text-white  bg-[#323232] mt-[2px]  `}>
                     <p className={` ${window.innerWidth <= 576 ? "text-[15px] " : "text-[30px]" }  font-semibold text-white break-words`}>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from Rs 250 to Rs 1,100 a month. No extra costs, no contracts.</p>
                   </div>
                 </details>
@@ -272,7 +272,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                      <div className={` ${window.innerWidth <= 576 ? "ps-[10px] text-[22px] font-medium" : "ps-[20px] text-[35px]" }`}><p>Where can I watch ?</p></div>
                       <div className={` ${window.innerWidth <= 576 ? "mr-4" : "mr-6" } transition-transform group-open:rotate-180 `}><span className={` ${window.innerWidth <= 576 ? "text-[12px]" : " text-[22px]" } h-[10px] w-[20px] flex items-center justify-center `}>▼</span></div>
                   </summary>
-                  <div className={` ${window.innerWidth <= 576 ? "px-[15px] rounded-[15px] h-[270px] pt-[10px]" : "px-[50px] h-[325px]" }  text-white  bg-[#323232] mt-[2px] `}>
+                  <div className={` ${window.innerWidth <= 576 ? "px-[15px] rounded-[15px] h-[275px] pt-[10px]" : "px-[50px] h-[325px]" }  text-white  bg-[#323232] mt-[2px] `}>
                     <p className={` ${window.innerWidth <= 576 ? "text-[15px] " : "text-[30px]" }  font-semibold text-white break-words`}>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.<br/>
                     You can also download your favorite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
                   </div>
@@ -283,7 +283,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                      <div className={` ${window.innerWidth <= 576 ? "ps-[10px] text-[22px] font-medium" : "ps-[20px] text-[35px]" }`}><p>How do I cancel?</p></div>
                       <div className={` ${window.innerWidth <= 576 ? "mr-4" : "mr-6" } transition-transform group-open:rotate-180 `}><span className={` ${window.innerWidth <= 576 ? "text-[12px]" : " text-[22px]" } h-[10px] w-[20px] flex items-center justify-center `}>▼</span></div>
                   </summary>
-                  <div className={` ${window.innerWidth <= 576 ? "rounded-[15px] h-[130px] px-[15px] " : "h-[150px] px-[50px]" } pt-[10px] text-white bg-[#323232] mt-[2px] `}>
+                  <div className={` ${window.innerWidth <= 576 ? "rounded-[15px] h-[135px] px-[15px] " : "h-[150px] px-[50px]" } pt-[10px] text-white bg-[#323232] mt-[2px] `}>
                     <p className={` ${window.innerWidth <= 576 ? "text-[15px] " : "text-[30px]" }  font-semibold text-white break-words`}>Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
                   </div>
                 </details>
@@ -293,7 +293,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                      <div className={` ${window.innerWidth <= 576 ? "ps-[10px] text-[22px] font-medium" : "ps-[20px] text-[35px]" }`}><p>What can I watch on Netfliex ?</p></div>
                       <div className={` ${window.innerWidth <= 576 ? "mr-4" : "mr-6" } transition-transform group-open:rotate-180 `}><span className={` ${window.innerWidth <= 576 ? "text-[12px]" : " text-[22px]" } h-[10px] w-[20px] flex items-center justify-center `}>▼</span></div>
                   </summary>
-                  <div className={` ${window.innerWidth <= 576 ? " rounded-[15px] h-[120px] px-[15px]" : "h-[150px] px-[50px]" } pt-[10px] text-white bg-[#323232] mt-[2px] `}>
+                  <div className={` ${window.innerWidth <= 576 ? " rounded-[15px] h-[125px] px-[15px]" : "h-[150px] px-[50px]" } pt-[10px] text-white bg-[#323232] mt-[2px] `}>
                     <p className={` ${window.innerWidth <= 576 ? "text-[15px] " : "text-[30px]" }  font-semibold text-white break-words`}>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
                   </div>
                 </details>
@@ -303,7 +303,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                      <div className={` ${window.innerWidth <= 576 ? "ps-[10px] text-[22px] font-medium" : "ps-[20px] text-[35px]" }`}><p>Is Netfliex good for Kids ?</p></div>
                       <div className={` ${window.innerWidth <= 576 ? "mr-4" : "mr-6" } transition-transform group-open:rotate-180 `}><span className={` ${window.innerWidth <= 576 ? "text-[12px]" : " text-[22px]" } h-[10px] w-[20px] flex items-center justify-center `}>▼</span></div>
                   </summary>
-                  <div className={` ${window.innerWidth <= 576 ? "rounded-[15px] px-[15px] h-[230px] " : "h-[300px] px-[50px]" } pt-[10px] text-white bg-[#323232] mt-[2px] `}>
+                  <div className={` ${window.innerWidth <= 576 ? "rounded-[15px] px-[15px] h-[235px] " : "h-[300px] px-[50px]" } pt-[10px] text-white bg-[#323232] mt-[2px] `}>
                     <p className={` ${window.innerWidth <= 576 ? "text-[15px] " : "text-[30px]" }  font-semibold text-white break-words`}>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.<br/><br/>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
                   </div>
                 </details>

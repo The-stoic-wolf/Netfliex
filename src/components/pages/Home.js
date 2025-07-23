@@ -150,7 +150,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
 
               <div className={` ${window.innerWidth <= 576 ? "top-[20%] left-[2%] h-[400px] w-[84%] mx-[7%]" : "top-[25%] left-[22%] h-[400px] w-[900px]" } z-20 absolute flex items-center pt-[10px] flex-col`}>
                 <div className={` ${window.innerWidth <= 576 ? "h-[120px] w-[94%]" : "h-[160px] w-[90%]" } flex `}>
-                  <p className={` ${window.innerWidth <= 576 ? "text-[37px] " : " text-[70px]" } font-bold text-white italic leading-none text-center`}>Unlimited movies, TV shows, and more</p>
+                  <p className={` ${window.innerWidth <= 576 ? "text-[37px] " : "italic text-[70px]" } font-bold text-white  leading-none text-center`}>Unlimited movies, TV shows, and more</p>
                 </div>
                 <div className={` ${window.innerWidth <= 576 ? " w-[94%] h-[30px] mt-[5px]" : " w-[90%] h-[50px] mt-[10px]"} `}>
                   <p className={` ${window.innerWidth <= 576 ? "text-[18px] " : " text-[30px]" } text-center text-white italic font-semibold`}>Starts at Rs 250. Cancel anytime.</p>
@@ -165,7 +165,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                       <input id='input1' onChange={handlechangeinput1} onBlur={handleBlurinput1} className={` ${window.innerWidth <= 576 ? "w-[96%] ms-[2%]" : "ms-[1%] w-[98%]" } ${error1 ?"border-solid border-red-500 h-[60px] border-[2px]":" border-slate-300"} text-white  text-[15px] ps-[10px] h-[70px] bg-black border-[1px] outline-none rounded-[5px] focus:border-solid focus:border-[3px]  `} type={email1} placeholder='Email address' />
                       {inputError1 && (<p className={` ${window.innerWidth <= 576 ? "text-[15px] w-[90%] " : " text-[18px] w-[80%]" } h-[25px] ms-[10px] text-red-500 `}>{error1}</p>)}
                     </div>
-                    <button className={` ${window.innerWidth <= 576 ? "w-[40%] text-[15px] h-[60px] pb-[4px] mt-[5px] font-semibold " : "w-[27%] text-[25px] h-[70px] ms-[0%] font-semibold pb-[12px] " } bg-red-600 rounded-[10px] text-white ps-[5px]`} onClick={handlemovecursor1}>GET STARTED <span className={`${window.innerWidth <= 576 ? " text-[20px] ps-[10px]" : "text-[40px] ps-[5px] font-bold  " }`}> › </span></button>
+                    <button className={` ${window.innerWidth <= 576 ? "w-[42%] text-[15px] h-[60px] pb-[4px] mt-[5px] font-bold " : "w-[27%] text-[25px] h-[70px] ms-[0%] font-semibold pb-[12px] " } bg-red-600 rounded-[10px] text-white ps-[5px]`} onClick={handlemovecursor1}>GET STARTED <span className={`${window.innerWidth <= 576 ? "text-[20px] ps-[5px]" : "text-[40px] ps-[5px] font-bold  " }`}> › </span></button>
                   </div>
                   
                 </div>
@@ -191,7 +191,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
               return <div key={index} className={` ${window.innerWidth <= 576 ? "h-[250px] w-[170px] m-[10px] " : " m-[20px] h-[300px] w-[220px]"} relative bg-gray-300 overflow-visible `}>
                   <img className='absolute h-[60px] w-[50px] m-[10px] ' src="netfliex-icon.png" alt="" />
                   <img className="h-full w-full hover:scale-110 object-cover" src={item.img} alt="Sample"/>
-                  <span className={` ${window.innerWidth <= 576 ? "text-[80px] [-webkit-text-stroke:2px_white] font-semibold " : " text-[120px] [-webkit-text-stroke:3px_white] font-bold " } absolute left-[-20px] bottom-[-20px]`}>
+                  <span className={` ${window.innerWidth <= 576 ? "text-[80px] [-webkit-text-stroke:2px_white] font-bold " : " text-[120px] [-webkit-text-stroke:3px_white] font-bold " } absolute left-[-20px] bottom-[-20px]`}>
                     {item.number}
                   </span>
               </div>
@@ -251,7 +251,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                      <div className={` ${window.innerWidth <= 576 ? "ps-[10px] text-[22px] font-medium" : "ps-[20px] text-[35px]" }`}><p>What is Netfliex ?</p></div>
                       <div className={` ${window.innerWidth <= 576 ? "mr-4" : "mr-6" } transition-transform group-open:rotate-180 `}><span className={` ${window.innerWidth <= 576 ? "text-[12px]" : " text-[22px]" } h-[10px] w-[20px] flex items-center justify-center `}>▼</span></div>
                   </summary>
-                  <div className={` ${window.innerWidth <= 576 ? "px-[15px] h-[255px] rounded-[15px] pt-[10px]" : " px-[50px] h-[325px]" }  text-white  bg-[#323232] mt-[2px]  `}>
+                  <div className={` ${window.innerWidth <= 576 ? "px-[15px] h-[260px] rounded-[15px] pt-[10px]" : " px-[50px] h-[325px]" }  text-white  bg-[#323232] mt-[2px]  `}>
                     <p className={` ${window.innerWidth <= 576 ? "text-[15px] " : "text-[30px]" }  font-semibold text-white break-words`}>Netflix is a streaming service that offers a wide variety of award-winning TV shows,movies, anime, documentaries, and more on thousands of internet-connected device.
                     <br/><br/> You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
                   </div>
@@ -272,7 +272,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                      <div className={` ${window.innerWidth <= 576 ? "ps-[10px] text-[22px] font-medium" : "ps-[20px] text-[35px]" }`}><p>Where can I watch ?</p></div>
                       <div className={` ${window.innerWidth <= 576 ? "mr-4" : "mr-6" } transition-transform group-open:rotate-180 `}><span className={` ${window.innerWidth <= 576 ? "text-[12px]" : " text-[22px]" } h-[10px] w-[20px] flex items-center justify-center `}>▼</span></div>
                   </summary>
-                  <div className={` ${window.innerWidth <= 576 ? "px-[15px] rounded-[15px] h-[275px] pt-[10px]" : "px-[50px] h-[325px]" }  text-white  bg-[#323232] mt-[2px] `}>
+                  <div className={` ${window.innerWidth <= 576 ? "px-[15px] rounded-[15px] h-[280px] pt-[10px]" : "px-[50px] h-[325px]" }  text-white  bg-[#323232] mt-[2px] `}>
                     <p className={` ${window.innerWidth <= 576 ? "text-[15px] " : "text-[30px]" }  font-semibold text-white break-words`}>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.<br/>
                     You can also download your favorite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
                   </div>
@@ -303,7 +303,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                      <div className={` ${window.innerWidth <= 576 ? "ps-[10px] text-[22px] font-medium" : "ps-[20px] text-[35px]" }`}><p>Is Netfliex good for Kids ?</p></div>
                       <div className={` ${window.innerWidth <= 576 ? "mr-4" : "mr-6" } transition-transform group-open:rotate-180 `}><span className={` ${window.innerWidth <= 576 ? "text-[12px]" : " text-[22px]" } h-[10px] w-[20px] flex items-center justify-center `}>▼</span></div>
                   </summary>
-                  <div className={` ${window.innerWidth <= 576 ? "rounded-[15px] px-[15px] h-[235px] " : "h-[300px] px-[50px]" } pt-[10px] text-white bg-[#323232] mt-[2px] `}>
+                  <div className={` ${window.innerWidth <= 576 ? "rounded-[15px] px-[15px] h-[240px] " : "h-[300px] px-[50px]" } pt-[10px] text-white bg-[#323232] mt-[2px] `}>
                     <p className={` ${window.innerWidth <= 576 ? "text-[15px] " : "text-[30px]" }  font-semibold text-white break-words`}>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.<br/><br/>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
                   </div>
                 </details>

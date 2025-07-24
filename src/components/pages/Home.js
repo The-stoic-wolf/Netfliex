@@ -150,7 +150,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
 
               <div className={` ${window.innerWidth <= 576 ? "top-[20%] left-[2%] h-[400px] w-[84%] mx-[7%]" : "top-[25%] left-[22%] h-[400px] w-[900px]" } z-20 absolute flex items-center pt-[10px] flex-col`}>
                 <div className={` ${window.innerWidth <= 576 ? "h-[120px] w-[94%]" : "h-[160px] w-[90%]" } flex `}>
-                  <p className={` ${window.innerWidth <= 576 ? "text-[37px] font-extrabold " : "italic text-[70px] font-bold" } text-white  leading-none text-center`}>Unlimited movies, TV shows, and more</p>
+                  <p className={` ${window.innerWidth <= 576 ? "text-[37px] font-bold " : "italic text-[70px] font-bold" } text-white  leading-none text-center`}>Unlimited movies, TV shows, and more</p>
                 </div>
                 <div className={` ${window.innerWidth <= 576 ? " w-[94%] h-[30px] mt-[5px]" : " w-[90%] h-[50px] mt-[10px]"} `}>
                   <p className={` ${window.innerWidth <= 576 ? "text-[18px] " : " text-[30px]" } text-center text-white italic font-semibold`}>Starts at Rs 250. Cancel anytime.</p>
@@ -191,7 +191,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
               return <div key={index} className={` ${window.innerWidth <= 576 ? "h-[250px] w-[200px] m-[10px]  " : " m-[20px] h-[300px] w-[220px]"} relative bg-gray-300 overflow-visible obj `}>
                   <img className='absolute h-[60px] w-[50px] m-[10px] ' src="netfliex-icon.png" alt="" />
                   <img className="h-full w-full hover:scale-110 object-cover" src={item.img} alt="Sample"/>
-                  <span className={` ${window.innerWidth <= 576 ? "text-[90px] [-webkit-text-stroke:2px_white] font-extrabold left-[-22]" : " text-[120px] [-webkit-text-stroke:3px_white] font-bold left-[-20px]" } absolute  bottom-[-20px]`}>
+                  <span className={` ${window.innerWidth <= 576 ? "text-[90px] [-webkit-text-stroke:2px_white] font-bold left-[-20]" : " text-[120px] [-webkit-text-stroke:3px_white] font-bold left-[-20px]" } absolute  bottom-[-20px]`}>
                     {item.number}
                   </span>
               </div>

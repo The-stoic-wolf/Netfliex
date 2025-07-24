@@ -150,7 +150,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
 
               <div className={` ${window.innerWidth <= 576 ? "top-[20%] left-[2%] h-[400px] w-[84%] mx-[7%]" : "top-[25%] left-[22%] h-[400px] w-[900px]" } z-20 absolute flex items-center pt-[10px] flex-col`}>
                 <div className={` ${window.innerWidth <= 576 ? "h-[120px] w-[94%]" : "h-[160px] w-[90%]" } flex `}>
-                  <p className={` ${window.innerWidth <= 576 ? "text-[20px] font-bold " : "italic text-[70px] font-bold" } text-white  leading-none text-center`}>Unlimited movies, TV shows, and more</p>
+                  <p className={` ${window.innerWidth <= 576 ? "text-[35px] font-bold " : "italic text-[70px] font-bold" } text-white  leading-none text-center`}>Unlimited movies, TV shows, and more</p>
                 </div>
                 <div className={` ${window.innerWidth <= 576 ? " w-[94%] h-[30px] mt-[5px]" : " w-[90%] h-[50px] mt-[10px]"} `}>
                   <p className={` ${window.innerWidth <= 576 ? "text-[18px] " : " text-[30px]" } text-center text-white italic font-semibold`}>Starts at Rs 250. Cancel anytime.</p>

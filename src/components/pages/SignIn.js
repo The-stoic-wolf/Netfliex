@@ -88,15 +88,9 @@ export default function SignIn() {
   if (emailError || passwordError) {
     return;
   }
-  
-  const apiUrl =
-  process.env.REACT_APP_API_URL ??
-  (window.location.hostname === "localhost"
-    ? "http://localhost:5000"
-    : "https://<your-backend-vercel-url>.vercel.app");
 
   try {
-    const response = await fetch(`${apiUrl}/api/signup?v=2`, {
+    const response = await fetch('http://localhost:5000/api/signup?v=2', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -105,7 +99,6 @@ export default function SignIn() {
     });
 
     const data = await response.json();
-    console.log("API URL:", process.env.REACT_APP_API_URL);
 
     if (response.ok) {
       alert("✅ Signup successful!");

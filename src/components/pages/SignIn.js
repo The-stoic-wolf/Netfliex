@@ -90,7 +90,8 @@ export default function SignIn() {
   }
 
   try {
-    const response = await fetch(`${process.env.REACT_APP_API_URL}/api/signup?v=2`, {
+    const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:5000";
+    const response = await fetch(`${apiUrl}/api/signup?v=2`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -99,6 +100,7 @@ export default function SignIn() {
     });
 
     const data = await response.json();
+    console.log("API URL:", process.env.REACT_APP_API_URL);
 
     if (response.ok) {
       alert("✅ Signup successful!");

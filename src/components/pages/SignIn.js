@@ -11,7 +11,7 @@ export default function SignIn() {
       pass = pass.trim()
      if(!pass){
        return "please enter a stong password";
-     }else if(pass.length < 6){
+     }else if(pass.length < 8){
       return "password must be 8 characters long";
      }else{
       return ""; 
@@ -90,28 +90,31 @@ export default function SignIn() {
   }
 
   try {
-     const response = await fetch('http://localhost:3000/api/signup', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ email, password })
-  });
+    const response = await fetch('http://localhost:5000/api/signup', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email, password }),
+    });
 
     const data = await response.json();
-      if (response.ok) {
-        alert("successfully signup")
-        setEmail("");
-        setPassword("");
-      }else{
-      alert(data.error || "signup failed")
-      };
+
+    if (response.ok) {
+      alert("✅ Signup successful!");
+      setEmail("");
+      setPassword("");
+    } else {
+      // Show meaningful message from backend or fallback
+      alert(data.error || "❌ Signup failed. Please try again.");
+    }
+
   } catch (error) {
-     alert('networking error or server is unable to response')
-     console.error(error);
+    // Network/server related issues
+    console.error("Error during signup:", error);
+    alert("⚠️ Network error or server is not responding.");
   }
- 
-};
+ };
 
   return (
     <>

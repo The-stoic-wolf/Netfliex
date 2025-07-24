@@ -4,7 +4,7 @@
  const cors = require('cors');
 
 const app = express()
-const port = process.env.port || 3000;
+const port = process.env.port || 5000;
 
  connectTomongo();
 

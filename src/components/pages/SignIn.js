@@ -120,7 +120,7 @@ export default function SignIn() {
     <>
     <div className={`${window.innerWidth <= 576 ? " bg-black h-[900px] ":"h-[1100px]"} relative  overflow-hidden`}>
        <img className={` h-full w-full scale-110 object-cover`} src="netfliex-page.jpg" alt="netfliex-logo" />
-       <div className={` ${window.innerWidth <= 576 ? " bg-black/70" : " bg-black/45" } absolute inset-0 `}></div>
+       <div className={` ${window.innerWidth <= 576 ? " bg-black/80" : " bg-black/45" } absolute inset-0 `}></div>
 
        <div className={`${window.innerWidth <= 576 ? "h-[800px] w-[100%] top-[10%] " : "bg-black/80 h-[900px] w-[38%] top-[15%] left-[30%]" } absolute flex flex-col items-center`}>
           <div className={`${window.innerWidth <= 576 ? " w-[94%] " : "mt-[30px] w-[90%] " } h-[80px] `}>

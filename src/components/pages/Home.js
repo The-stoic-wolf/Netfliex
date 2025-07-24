@@ -272,7 +272,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                      <div className={` ${window.innerWidth <= 576 ? "ps-[10px] text-[22px] font-medium" : "ps-[20px] text-[35px]" }`}><p>Where can I watch ?</p></div>
                       <div className={` ${window.innerWidth <= 576 ? "mr-4" : "mr-6" } transition-transform group-open:rotate-180 `}><span className={` ${window.innerWidth <= 576 ? "text-[12px]" : " text-[22px]" } h-[10px] w-[20px] flex items-center justify-center `}>▼</span></div>
                   </summary>
-                  <div className={` ${window.innerWidth <= 576 ? "px-[12px] rounded-[15px] h-[290px] pt-[6px]" : "px-[50px] h-[325px]" }  text-white  bg-[#323232] mt-[2px] `}>
+                  <div className={` ${window.innerWidth <= 576 ? "px-[124x] rounded-[15px] h-[290px] pt-[6px]" : "px-[50px] h-[325px]" }  text-white  bg-[#323232] mt-[2px] `}>
                     <p className={` ${window.innerWidth <= 576 ? "text-[15px] " : "text-[30px]" }  font-semibold text-white break-words`}>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.<br/>
                     You can also download your favorite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
                   </div>
@@ -318,7 +318,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
             </div>
             <div className={` ${window.innerWidth <= 576 ? "flex-col h-[150px]" : "flex-row" } flex mt-[10px]`}>
               <div className={`${window.innerWidth <= 576 ? "w-[100%] h-[75px]" : "w-[65%] h-[90px]" } flex flex-col `}>
-                 <input id='input2' onChange={handlechangeinput2} onBlur={handleBlurinput2} className={` ${window.innerWidth <= 576 ? "w-[96%] ms-[2%] mt-[2px]" : "ms-[10%] w-[90%]" } ${error1 ?"border-solid border-red-500 h-[60px] border-[2px]":" border-slate-500"} text-white focus:border-white text-[15px] ps-[10px] h-[70px] bg-black border-[1px] outline-none rounded-[5px] focus:border-solid focus:border-[3px]  `} type={email1} placeholder='Email address' />
+                 <input id='input2' onChange={handlechangeinput2} onBlur={handleBlurinput2} className={` ${window.innerWidth <= 576 ? "w-[96%] ms-[2%] mt-[2px]" : "ms-[10%] w-[90%]" } ${error2 ?"border-solid border-red-500 h-[60px] border-[2px]":" border-slate-500"} text-white focus:border-white text-[15px] ps-[10px] h-[70px] bg-black border-[1px] outline-none rounded-[5px] focus:border-solid focus:border-[3px]  `} type={email1} placeholder='Email address' />
                  {inputError2 && (<p className={` ${window.innerWidth <= 576 ? "text-[15px] w-[90%]  ms-[15px]" : "ms-[10%] text-[18px] w-[80%]" } h-[25px] text-red-500 `}>{error2}</p>)}
               </div>
                   <button className={` ${window.innerWidth <= 576 ? "w-[40%] text-[15px] h-[60px] pb-[4px] mt-[5px] ms-[30%] ps-[2px] font-extrabold " : "w-[15%] text-[25px] h-[70px] font-semibold pb-[12px] ms-[1%] ps-[5px]" } bg-red-600 rounded-[10px] text-white`} onClick={handlemovecursor2}>GET STARTED <span className={`${window.innerWidth <= 576 ? " text-[20px] ps-[5px] font-extrabold " : "text-[40px] ps-[5px] font-bold" }`}> › </span></button>

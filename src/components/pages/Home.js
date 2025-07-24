@@ -239,7 +239,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
         </div>
        </div>
 
-        <div  className={` ${window.innerWidth <= 576 ? "h-[640px]" : "h-[800px]" } flex flex-col items-center bg-black `}>
+        <div  id='info' className={` ${window.innerWidth <= 576 ? "h-[640px]" : "h-[800px]" } flex flex-col items-center bg-black `}>
           <div className={` ${window.innerWidth <= 576 ? "h-[40px] w-[94%] " : " h-[60px] w-[90%]" } my-[10px] `}>
              <p className={` ${window.innerWidth <= 576 ? "text-[20px] ps-[10px] " : "text-[28px] ps-[75px] pt-[10px]" } font-bold text-white `}>Frequently Asked Questions</p>
           </div>
@@ -253,7 +253,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                   </summary>
                   <div className={` ${window.innerWidth <= 576 ? "px-[15px] h-[260px] rounded-[15px] pt-[10px]" : " px-[50px] h-[325px]" }  text-white  bg-[#323232] mt-[2px]  `}>
                     <p className={` ${window.innerWidth <= 576 ? "text-[15px] " : "text-[30px]" }  font-semibold text-white break-words`}>Netflix is a streaming service that offers a wide variety of award-winning TV shows,movies, anime, documentaries, and more on thousands of internet-connected device.
-                    <br/><br/> You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
+                    <br/> You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
                   </div>
                 </details>
 
@@ -272,7 +272,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                      <div className={` ${window.innerWidth <= 576 ? "ps-[10px] text-[22px] font-medium" : "ps-[20px] text-[35px]" }`}><p>Where can I watch ?</p></div>
                       <div className={` ${window.innerWidth <= 576 ? "mr-4" : "mr-6" } transition-transform group-open:rotate-180 `}><span className={` ${window.innerWidth <= 576 ? "text-[12px]" : " text-[22px]" } h-[10px] w-[20px] flex items-center justify-center `}>▼</span></div>
                   </summary>
-                  <div className={` ${window.innerWidth <= 576 ? "px-[15px] rounded-[15px] h-[280px] pt-[10px]" : "px-[50px] h-[325px]" }  text-white  bg-[#323232] mt-[2px] `}>
+                  <div className={` ${window.innerWidth <= 576 ? "px-[15px] rounded-[15px] h-[290px] pt-[10px]" : "px-[50px] h-[325px]" }  text-white  bg-[#323232] mt-[2px] `}>
                     <p className={` ${window.innerWidth <= 576 ? "text-[15px] " : "text-[30px]" }  font-semibold text-white break-words`}>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.<br/>
                     You can also download your favorite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
                   </div>

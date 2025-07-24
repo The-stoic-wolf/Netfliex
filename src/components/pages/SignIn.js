@@ -90,7 +90,7 @@ export default function SignIn() {
   }
 
   try {
-    const response = await fetch('http://localhost:5000/api/signup?v=2', {
+    const response = await fetch('http://localhost:5000/api/signup?v=3', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

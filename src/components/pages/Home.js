@@ -191,7 +191,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
               return <div key={index} className={` ${window.innerWidth <= 576 ? "h-[250px] w-[200px] m-[10px]  " : " m-[20px] h-[300px] w-[220px]"} relative bg-gray-300 overflow-visible obj `}>
                   <img className='absolute h-[60px] w-[50px] m-[10px] ' src="netfliex-icon.png" alt="" />
                   <img className="h-full w-full hover:scale-110 object-cover" src={item.img} alt="Sample"/>
-                  <span className={` ${window.innerWidth <= 576 ? "text-[90px] [-webkit-text-stroke:2px_white] font-bold left-[-10]" : " text-[120px] [-webkit-text-stroke:3px_white] font-bold left-[-20px]" } absolute  bottom-[-20px]`}>
+                  <span className={` ${window.innerWidth <= 576 ? "text-[90px] [-webkit-text-stroke:2px_white] font-bold left-[10%]" : " text-[120px] [-webkit-text-stroke:3px_white] font-bold left-[-20px]" } absolute  bottom-[-20px]`}>
                     {item.number}
                   </span>
               </div>
@@ -272,7 +272,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                      <div className={` ${window.innerWidth <= 576 ? "ps-[10px] text-[22px] font-medium" : "ps-[20px] text-[35px]" }`}><p>Where can I watch ?</p></div>
                       <div className={` ${window.innerWidth <= 576 ? "mr-4" : "mr-6" } transition-transform group-open:rotate-180 `}><span className={` ${window.innerWidth <= 576 ? "text-[12px]" : " text-[22px]" } h-[10px] w-[20px] flex items-center justify-center `}>▼</span></div>
                   </summary>
-                  <div className={` ${window.innerWidth <= 576 ? "px-[15px] rounded-[15px] h-[295px] pt-[6px]" : "px-[50px] h-[325px]" }  text-white  bg-[#323232] mt-[2px] `}>
+                  <div className={` ${window.innerWidth <= 576 ? "px-[15px] rounded-[15px] h-[295px] pt-[5px]" : "px-[50px] h-[325px]" }  text-white  bg-[#323232] mt-[2px] `}>
                     <p className={` ${window.innerWidth <= 576 ? "text-[15px] " : "text-[30px]" }  font-semibold text-white break-words`}>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.<br/>
                     You can also download your favorite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
                   </div>

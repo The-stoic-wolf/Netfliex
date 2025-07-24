@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 export default function SignIn() {
 
-
+/*password validation */
    const [password, setPassword] = useState("");
    const [Passworderror, setpasswordError] = useState("");
    const [touched, setTouched] = useState(false);
@@ -12,7 +12,7 @@ export default function SignIn() {
      if(!pass){
        return "please enter a stong password";
      }else if(pass.length < 6){
-      return "password must be 6 characters long";
+      return "password must be 8 characters long";
      }else{
       return ""; 
      }
@@ -47,15 +47,11 @@ export default function SignIn() {
     
    const checkvalidation = (value)=>{
       value= value.trim()
-      const isNumber = /^[0-9]+$/.test(value); 
+      // const isOnlyNumber = /^[0-9]+$/.test(value); 
     if(!value){
       return 'please enter Email or number';
     }else if(!value.endsWith('@gmail.com')){
       return 'Email must be ends with @gmail.com'
-    }else if(isNumber < 11){
-      return "number must be 11 digits"
-    }else if(isNumber){
-      return " enter a valid number";
     }else{
       return "";
     }
@@ -79,7 +75,43 @@ export default function SignIn() {
          setError(false)
        }
    }
-   const inputError = Boolean(error)
+   const inputError = Boolean(error);
+   /* signup in backend */
+  
+ const handleSignup = async () => {
+  const emailError = checkvalidation(email);
+  const passwordError = handlepasswordvalidation(password);
+
+  setError(emailError);
+  setpasswordError(passwordError);
+
+  if (emailError || passwordError) {
+    return;
+  }
+
+  try {
+     const response = await fetch('http://localhost:3000/api/signup', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ email, password })
+  });
+
+    const data = await response.json();
+      if (response.ok) {
+        alert("successfully signup")
+        setEmail("");
+        setPassword("");
+      }else{
+      alert(data.error || "signup failed")
+      };
+  } catch (error) {
+     alert('networking error or server is unable to response')
+     console.error(error);
+  }
+ 
+};
 
   return (
     <>
@@ -98,7 +130,7 @@ export default function SignIn() {
             <input value={password} onChange={passwordhandle} onBlur={handlepasswordblur} className={` ${window.innerWidth <= 576 ? "w-[94%] rounded-[5px]  " : " rounded-[10px] w-[80%]" } ${Passworderror ?"h-[60px] border-solid border-red-500 border-[2px]":" h-[80px] border-white"} bg-black/40 text-white text-[20px] font-semibold mt-[10px] ps-[10px] border-[1px]  outline-none focus:border-[3px] border-solid`} autoComplete="off" placeholder='Password' type="text" />
              {inputpassword && (<p className="w-[80%] text-red-500 text-sm mt-1">{Passworderror}</p>)}
 
-            <button className={`${window.innerWidth <= 576 ? "w-[94%] h-[60px] text-[23px] " : " w-[80%] h-[55px] text-[20px]" } bg-red-600 text-white rounded-[10px] text-center mt-[15px] font-bold`}>Sign in</button>
+            <button onClick={handleSignup} className={`${window.innerWidth <= 576 ? "w-[94%] h-[60px] text-[23px] " : " w-[80%] h-[55px] text-[20px]" } bg-red-600 text-white rounded-[10px] text-center mt-[15px] font-bold`}>Sign in</button>
             <p className={`${window.innerWidth <= 576 ? " h-[40px] w-[90%] pt-[3px] font-medium text-[22px] " : "h-[40px] w-[40%] pt-[5px] font-semibold text-[25px]"}  text-center text-white  mt-[10px] `}>OR</p>
             <button className={`${window.innerWidth <= 576 ? "w-[94%] mt-[10px] " : " w-[80%] mt-[15px]" } h-[55px] bg-white/30 text-white rounded-[10px] text-center font-bold text-[20px] `}>Use a Sign-In Code</button>
             <a className={`${window.innerWidth <= 576 ? "  mt-[10px] pt-[2px] text-[17px] " : " my-[20px] text-[20px]" } w-[90%] h-[40px] text-center text-white font-semibold underline decoration-white decoration-2`} href="/">FORGET PASSWORD</a>

@@ -239,14 +239,14 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
         </div>
        </div>
 
-        <div id='info' className={` ${window.innerWidth <= 576 ? "h-[640px]" : "h-[800px]" } flex flex-col items-center bg-black `}>
+        <div  className={` ${window.innerWidth <= 576 ? "h-[640px]" : "h-[800px]" } flex flex-col items-center bg-black `}>
           <div className={` ${window.innerWidth <= 576 ? "h-[40px] w-[94%] " : " h-[60px] w-[90%]" } my-[10px] `}>
              <p className={` ${window.innerWidth <= 576 ? "text-[20px] ps-[10px] " : "text-[28px] ps-[75px] pt-[10px]" } font-bold text-white `}>Frequently Asked Questions</p>
           </div>
           <div className={` ${window.innerWidth <= 576 ? "h-[560px] w-[94%] " : " h-[680px] w-[90%]" } `}>
              <div className={` ${window.innerWidth <= 576 ? "" : "" } flex items-center flex-col w-[100%] mt-[10px]`}>
 
-                <details id='box1' className={` ${window.innerWidth <= 576 ? "w-[96%] my-[10px]" : "w-[90%] my-[5px]" } group text-white  `}>
+                <details  className={` ${window.innerWidth <= 576 ? "w-[96%] my-[10px]" : "w-[90%] my-[5px]" } group text-white  `}>
                   <summary className={` ${window.innerWidth <= 576 ? "h-[70px] rounded-[15px]" : " h-[100px]" } flex justify-between items-center flex-row cursor-pointer  bg-[#323232] text-white hover:bg-[#4e4e54] transition `}>
                      <div className={` ${window.innerWidth <= 576 ? "ps-[10px] text-[22px] font-medium" : "ps-[20px] text-[35px]" }`}><p>What is Netfliex ?</p></div>
                       <div className={` ${window.innerWidth <= 576 ? "mr-4" : "mr-6" } transition-transform group-open:rotate-180 `}><span className={` ${window.innerWidth <= 576 ? "text-[12px]" : " text-[22px]" } h-[10px] w-[20px] flex items-center justify-center `}>▼</span></div>
@@ -257,7 +257,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                   </div>
                 </details>
 
-                <details  id='box2' className={` ${window.innerWidth <= 576 ? "w-[96%] my-[10px]" : "w-[90%] my-[5px]" } group text-white  `}>
+                <details   className={` ${window.innerWidth <= 576 ? "w-[96%] my-[10px]" : "w-[90%] my-[5px]" } group text-white  `}>
                   <summary className={` ${window.innerWidth <= 576 ? "h-[70px] rounded-[15px]" : " h-[100px]" } flex justify-between items-center flex-row cursor-pointer  bg-[#323232] text-white hover:bg-[#4e4e54] transition `}>
                      <div className={` ${window.innerWidth <= 576 ? "ps-[10px] text-[22px] font-medium" : "ps-[20px] text-[35px]" }`}><p>How much does netfliex Cost ?</p></div>
                       <div className={` ${window.innerWidth <= 576 ? "mr-4" : "mr-6" } transition-transform group-open:rotate-180 `}><span className={` ${window.innerWidth <= 576 ? "text-[12px]" : " text-[22px]" } h-[10px] w-[20px] flex items-center justify-center `}>▼</span></div>
@@ -267,7 +267,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                   </div>
                 </details>
 
-                <details id='box1' className={` ${window.innerWidth <= 576 ? "w-[96%] my-[10px]" : "w-[90%] my-[5px]" } group text-white  `}>
+                <details  className={` ${window.innerWidth <= 576 ? "w-[96%] my-[10px]" : "w-[90%] my-[5px]" } group text-white  `}>
                   <summary className={` ${window.innerWidth <= 576 ? "h-[70px] rounded-[15px]" : " h-[100px]" } flex justify-between items-center flex-row cursor-pointer  bg-[#323232] text-white hover:bg-[#4e4e54] transition `}>
                      <div className={` ${window.innerWidth <= 576 ? "ps-[10px] text-[22px] font-medium" : "ps-[20px] text-[35px]" }`}><p>Where can I watch ?</p></div>
                       <div className={` ${window.innerWidth <= 576 ? "mr-4" : "mr-6" } transition-transform group-open:rotate-180 `}><span className={` ${window.innerWidth <= 576 ? "text-[12px]" : " text-[22px]" } h-[10px] w-[20px] flex items-center justify-center `}>▼</span></div>
@@ -278,7 +278,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                   </div>
                 </details>
 
-                <details id='box2' className={` ${window.innerWidth <= 576 ? "w-[96%] my-[10px]" : "w-[90%] my-[5px]" } group text-white  `}>
+                <details  className={` ${window.innerWidth <= 576 ? "w-[96%] my-[10px]" : "w-[90%] my-[5px]" } group text-white  `}>
                   <summary className={` ${window.innerWidth <= 576 ? "h-[70px] rounded-[15px]" : " h-[100px]" } flex justify-between items-center flex-row cursor-pointer  bg-[#323232] text-white hover:bg-[#4e4e54] transition `}>
                      <div className={` ${window.innerWidth <= 576 ? "ps-[10px] text-[22px] font-medium" : "ps-[20px] text-[35px]" }`}><p>How do I cancel?</p></div>
                       <div className={` ${window.innerWidth <= 576 ? "mr-4" : "mr-6" } transition-transform group-open:rotate-180 `}><span className={` ${window.innerWidth <= 576 ? "text-[12px]" : " text-[22px]" } h-[10px] w-[20px] flex items-center justify-center `}>▼</span></div>
@@ -288,7 +288,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                   </div>
                 </details>
 
-                <details id='box2' className={` ${window.innerWidth <= 576 ? "w-[96%] my-[10px]" : "w-[90%] my-[5px]" } group text-white  `}>
+                <details  className={` ${window.innerWidth <= 576 ? "w-[96%] my-[10px]" : "w-[90%] my-[5px]" } group text-white  `}>
                   <summary className={` ${window.innerWidth <= 576 ? "h-[70px] rounded-[15px]" : " h-[100px]" } flex justify-between items-center flex-row cursor-pointer  bg-[#323232] text-white hover:bg-[#4e4e54] transition `}>
                      <div className={` ${window.innerWidth <= 576 ? "ps-[10px] text-[22px] font-medium" : "ps-[20px] text-[35px]" }`}><p>What can I watch on Netfliex ?</p></div>
                       <div className={` ${window.innerWidth <= 576 ? "mr-4" : "mr-6" } transition-transform group-open:rotate-180 `}><span className={` ${window.innerWidth <= 576 ? "text-[12px]" : " text-[22px]" } h-[10px] w-[20px] flex items-center justify-center `}>▼</span></div>
@@ -298,7 +298,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
                   </div>
                 </details>
 
-                <details id='box1' className={` ${window.innerWidth <= 576 ? "w-[96%] my-[10px]" : "w-[90%] my-[5px]" } group text-white  `}>
+                <details  className={` ${window.innerWidth <= 576 ? "w-[96%] my-[10px]" : "w-[90%] my-[5px]" } group text-white  `}>
                   <summary className={` ${window.innerWidth <= 576 ? "h-[70px] rounded-[15px]" : " h-[100px]" } flex justify-between items-center flex-row cursor-pointer  bg-[#323232] text-white hover:bg-[#4e4e54] transition `}>
                      <div className={` ${window.innerWidth <= 576 ? "ps-[10px] text-[22px] font-medium" : "ps-[20px] text-[35px]" }`}><p>Is Netfliex good for Kids ?</p></div>
                       <div className={` ${window.innerWidth <= 576 ? "mr-4" : "mr-6" } transition-transform group-open:rotate-180 `}><span className={` ${window.innerWidth <= 576 ? "text-[12px]" : " text-[22px]" } h-[10px] w-[20px] flex items-center justify-center `}>▼</span></div>

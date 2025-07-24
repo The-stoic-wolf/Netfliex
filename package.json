@@ -1,6 +1,5 @@
 {
   "name": "netfliex",
-  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
@@ -52,5 +51,7 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/The-stoic-wolf/Netfliex/issues"
-  }
+  },
+  "homepage": ".",
+   "version": "1.0.2"
 }

@@ -8,7 +8,10 @@ const port = process.env.port || 5000;
 
  connectTomongo();
 
- app.use(cors());
+ app.use(cors({
+  origin : "*",
+  methods : ['GET','POST']
+ }));
  app.use(express.json());
  app.use('/api',require('./routes/auth'));
 

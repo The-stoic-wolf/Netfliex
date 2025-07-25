@@ -76,6 +76,7 @@ export default function SignIn() {
        }
    }
    const inputError = Boolean(error);
+   
    /* signup in backend */
   
  const handleSignup = async () => {
@@ -90,7 +91,12 @@ export default function SignIn() {
   }
 
   try {
-    const response = await fetch('http://localhost:5000/api/signup?v=2', {
+    const isProduction = window.location.hostname !== "localhost";
+    const url = isProduction
+        ? "https://netfliex-jqt2.vercel.app/api/signup?v=2"
+        : "http://localhost:5000/api/signup?v=2";
+
+    const response = await fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -111,6 +117,7 @@ export default function SignIn() {
 
   } catch (error) {
     // Network/server related issues
+     console.log("Signup error:", err.message);
     console.error("Error during signup:", error);
     alert("⚠️ Network error or server is not responding.");
   }

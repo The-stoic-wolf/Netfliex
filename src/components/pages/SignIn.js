@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 
 export default function SignIn() {
 
-  const isMobile = window.innerWidth <= 576
-
 /*password validation */
    const [password, setPassword] = useState("");
    const [Passworderror, setpasswordError] = useState("");
@@ -21,7 +19,7 @@ export default function SignIn() {
    }
    const handlepasswordblur = (e)=>{
     if (e.target.value === "") {
-      setpasswordError("")
+      setError(false)
     }else{
       setTouched(true);
       setpasswordError(handlepasswordvalidation(password));
@@ -35,7 +33,7 @@ export default function SignIn() {
        setpasswordError(handlepasswordvalidation(num));
      }
      if(num === ""){
-         setpasswordError("")
+         setpasswordError(false)
          console.log('hello')
        }
    }
@@ -60,7 +58,7 @@ export default function SignIn() {
    }
    const handleBlur =(e)=>{
      if (e.target.value === "") {
-         setError("")
+         setError(false)
     }else{
         setTouched(true);
         setError(checkvalidation(email))
@@ -93,12 +91,8 @@ export default function SignIn() {
   }
 
   try {
-    const isProduction = window.location.hostname !== "localhost";
-    const url = isProduction
-        ? "https://netfliex-jqt2.vercel.app/api/signup?v=2"
-        : "http://localhost:5000/api/signup?v=2";
-
-    const response = await fetch(url, {
+    const urls = window.innerWidth <= 576 ? "fetch('netfliex-jqt2.vercel.app/api/signup?v=2')" : ""
+    const response = await fetch('http://localhost:5000/api/signup?v=2', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -119,7 +113,6 @@ export default function SignIn() {
 
   } catch (error) {
     // Network/server related issues
-     console.log("Signup error:", error.message);
     console.error("Error during signup:", error);
     alert("⚠️ Network error or server is not responding.");
   }
@@ -139,7 +132,7 @@ export default function SignIn() {
             <input id='input1' value={email} onChange={handlechange} onBlur={handleBlur} className={` ${window.innerWidth <= 576 ? "w-[94%] rounded-[6px]  " : " rounded-[10px] w-[80%]" } ${error ?"h-[60px] border-solid border-red-500 border-[2px]":" h-[80px] border-white"} bg-black/40 text-white text-[20px] font-semibold mt-[10px] ps-[10px] border-[1px]  outline-none focus:border-[3px] border-solid`} autoComplete="off" placeholder='Email or Mobile Number' type="text" />
             {inputError && (<p className="w-[80%] text-red-500 text-sm mt-1">{error}</p>)}
 
-            <input value={password} onChange={passwordhandle} onBlur={handlepasswordblur} className={` ${window.innerWidth <= 576 ? "w-[94%] rounded-[6px]  " : " rounded-[10px] w-[80%]" } ${Passworderror ?"h-[60px] border-solid border-red-500 border-[2px]":" h-[80px] border-white"} bg-black/40 text-white text-[20px] font-semibold mt-[10px] ps-[10px] border-[1px]  outline-none focus:border-[3px] border-solid`} autoComplete="off" placeholder='Password' type="password" />
+            <input value={password} onChange={passwordhandle} onBlur={handlepasswordblur} className={` ${window.innerWidth <= 576 ? "w-[94%] rounded-[6px]  " : " rounded-[10px] w-[80%]" } ${Passworderror ?"h-[60px] border-solid border-red-500 border-[2px]":" h-[80px] border-white"} bg-black/40 text-white text-[20px] font-semibold mt-[10px] ps-[10px] border-[1px]  outline-none focus:border-[3px] border-solid`} autoComplete="off" placeholder='Password' type="text" />
              {inputpassword && (<p className="w-[80%] text-red-500 text-sm mt-1">{Passworderror}</p>)}
 
             <button onClick={handleSignup} className={`${window.innerWidth <= 576 ? "w-[94%] h-[60px] text-[23px] " : " w-[80%] h-[55px] text-[20px]" } bg-red-600 text-white rounded-[10px] text-center mt-[15px] font-bold`}>Sign in</button>

@@ -6,7 +6,7 @@ const bcrypt = require('bcryptjs');
 router.post('/signup',async(req,res)=>{
     try {
        const {email,password} = req.body;
-
+        console.log("Mobile signup data:", req.body);
        const existingUser = await user.findOne({email})
        if(existingUser){
         return res.status(400).json({error:'user already exist with this email'});
@@ -21,7 +21,7 @@ router.post('/signup',async(req,res)=>{
        await Newuser.save();
        res.status(201).json({message:'User created successfully'})
     } catch (error) {
-        console.error(error.message);
+        console.error("Mobile signup error:", error.message);
         res.status(500).send('Internal server error');
     }
 });

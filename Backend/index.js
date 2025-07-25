@@ -9,8 +9,9 @@ const port = process.env.port || 5000;
  connectTomongo();
 
  app.use(cors({
-  origin : "*",
-  methods : ['GET','POST']
+  origin : "https://netfliex-iota.vercel.app",
+  methods : ['GET','POST'],
+  credentials: true
  }));
  app.use(express.json());
  app.use('/api',require('./routes/auth'));

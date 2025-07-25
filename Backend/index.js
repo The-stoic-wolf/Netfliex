@@ -1,28 +1,36 @@
- const connectTomongo = require('./database')
- const express = require('express'); 
- require('dotenv').config();
- const cors = require('cors');
+const express = require('express'); 
+require('dotenv').config();
+const connectTomongo = require('./database');
+const cors = require('cors');
 
-const app = express()
-const port = process.env.port || 5000;
+const app = express();
+const port = process.env.PORT || 5000;
 
- connectTomongo();
+// ✅ MongoDB connect
+connectTomongo();
 
- app.use(cors({
-  origin : "https://netfliex-iota.vercel.app",
-  methods : ['GET','POST'],
+// ✅ Setup CORS properly
+app.use(cors({
+  origin: 'https://netfliex-iota.vercel.app',
+  methods: ['GET', 'POST', 'OPTIONS'],
   credentials: true
- }));
- app.options('*', cors()); // 👈 Allow preflight for all routes
+}));
 
- app.use(express.json());
- app.use('/api',require('./routes/auth'));
+// ✅ Allow preflight requests
+app.options('*', cors());
 
- app.get('/', (req, res) => {
-  res.send('Hello from backend!')
-})
+// ✅ Enable JSON parsing
+app.use(express.json());
 
+// ✅ Your API routes
+app.use('/api', require('./routes/auth'));
+
+// ✅ Test Route
+app.get('/', (req, res) => {
+  res.send('Hello from backend!');
+});
+
+// ✅ Start server
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
-
+  console.log(`Backend running on port ${port}`);
+});

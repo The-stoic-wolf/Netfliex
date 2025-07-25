@@ -8,12 +8,12 @@ const port = process.env.PORT || 5000;
 
  connectTomongo();
 
- app.use(cors({
-  origin : "https://netfliex-iota.vercel.app",
-  methods : ['GET','POST','OPTIONS'],
-  credentials: true
- }));
- app.options('*', cors()); // 👈 Allow preflight for all routes
+//  app.use(cors({
+//   origin : "https://netfliex-iota.vercel.app",
+//   methods : ['GET','POST','OPTIONS'],
+//   credentials: true
+//  }));
+//  app.options('*', cors()); // 👈 Allow preflight for all routes
 
  app.use(express.json());
  app.use('/api',require('./routes/auth'));

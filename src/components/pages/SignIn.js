@@ -35,7 +35,7 @@ export default function SignIn() {
        setpasswordError(handlepasswordvalidation(num));
      }
      if(num === ""){
-         setpasswordError(false)
+         setpasswordError("")
          console.log('hello')
        }
    }
@@ -60,7 +60,7 @@ export default function SignIn() {
    }
    const handleBlur =(e)=>{
      if (e.target.value === "") {
-         setError(false)
+         setError("")
     }else{
         setTouched(true);
         setError(checkvalidation(email))
@@ -74,7 +74,7 @@ export default function SignIn() {
          setError(checkvalidation(val));
       }
       if(val === ""){
-         setError(false)
+         setError("")
        }
    }
    const inputError = Boolean(error);

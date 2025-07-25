@@ -13,6 +13,8 @@ const port = process.env.port || 5000;
   methods : ['GET','POST'],
   credentials: true
  }));
+ app.options('*', cors()); // 👈 Allow preflight for all routes
+
  app.use(express.json());
  app.use('/api',require('./routes/auth'));
 

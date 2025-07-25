@@ -98,13 +98,16 @@ export default function SignIn() {
         ? "https://netfliex-jqt2.vercel.app/api/signup?v=2"
         : "http://localhost:5000/api/signup?v=2";
 
-    const response = await fetch(url, {
-      method: 'POST',
+   const response = await fetch(url, {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify({ email, password }),
-    });
+        body: JSON.stringify({
+          email,
+          password,
+        }),
+  });
 
     const data = await response.json();
 

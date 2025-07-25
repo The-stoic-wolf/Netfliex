@@ -1,18 +1,18 @@
  const connectTomongo = require('./database')
  const express = require('express'); 
  require('dotenv').config();
- const cors = require('cors');
 
 const app = express()
 const port = process.env.PORT || 5000;
 
  connectTomongo();
 
-//  app.use(cors({
-//   origin : "https://netfliex-iota.vercel.app",
-//   methods : ['GET','POST','OPTIONS'],
-//   credentials: true
-//  }));
+const cors = require('cors');
+app.use(cors({
+  origin: "https://netfliex-iota.vercel.app",  // ✅ yahan frontend ka origin likhna hai
+  methods: ["GET", "POST"],
+}));
+
 //  app.options('*', cors()); // 👈 Allow preflight for all routes
 
  app.use(express.json());

@@ -2,8 +2,7 @@ import React,{useEffect,useState} from 'react'
 
 export default function Home() {
 
-  const isMobile = window.innerWidth <= 576;
-
+const isMobile = window.innerWidth <= 576;
 /* handling images section */  
 const images = [
   {img: "/jungle-image.jpeg", number :1},
@@ -70,7 +69,7 @@ const visibleimages = images.slice(startindex , startindex + itemsperpage)
    alldetails.forEach((detail)=>{
      detail.addEventListener('toggle',handletoggle)
    })
-     },[])
+},[])
 /*validation check for 1st input tag*/
 
    const [email1, setEmail1] = useState("");

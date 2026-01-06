@@ -5,6 +5,8 @@ import {Route,Routes,BrowserRouter } from 'react-router-dom';
 import SignIn from './components/pages/SignIn';
 
 function App() {
+    const isMobile = window.innerWidth <= 576;
+
   return (
    <>
    <BrowserRouter>

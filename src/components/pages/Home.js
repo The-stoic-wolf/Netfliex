@@ -13,8 +13,8 @@ const images = [
   {img: "/kgf-image.jpeg", number :6},
   {img: "/annabelle-image.jpeg", number :7},
   {img: "/beast-image.jpeg", number :8},
-  {img: "/squid-game.jpeg", number :9},
-  {img: "/kong-VS-godzilla.jpeg", number :10}
+  {img: "/kong-VS-godzilla.jpeg", number :9},
+  {img: "/squid-game.jpeg", number :10}
 ]
 
 const itemsperpage = isMobile ? 1 : 5;

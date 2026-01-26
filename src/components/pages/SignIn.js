@@ -51,7 +51,7 @@ export default function SignIn() {
       value= value.trim()
       // const isOnlyNumber = /^[0-9]+$/.test(value); 
     if(!value){
-      return 'please enter Email or number';
+      return 'Please Enter Email or Number';
     }else if(!value.endsWith('@gmail.com')){
       return 'Email must be ends with @gmail.com'
     }else{

@@ -5,8 +5,8 @@ export default function Home() {
 const isMobile = window.innerWidth <= 576;
 /* handling images section */  
 const images = [
-  {img: "/jungle-image.jpeg", number :1},
-  {img: "/alladin-image.jpeg", number :2},
+  {img: "/alladin-image.jpeg", number :1},
+  {img: "/jungle-image.jpeg", number :2},
   {img: "/squid-game2.jpeg", number :3},
   {img: "/demoon-images.jpeg", number :4},
   {img: "/12Fail-image.jpeg", number :5},
